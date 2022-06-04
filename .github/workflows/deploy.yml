@@ -23,15 +23,15 @@ jobs:
           context: ./client
           push: true
           tags: shubhamjr/multi-client:latest
-          context: ./nginx
-          push: true
-          tags: shubhamjr/multi-nginx
-          context: ./server
-          push: true
-          tags: shubhamjr/multi-server ./server
-          context: ./worker
-          push: true
-          tags: shubhamjr/multi-worker ./worker
+          # context: ./nginx
+          # push: true
+          # tags: shubhamjr/multi-nginx
+          # context: ./server
+          # push: true
+          # tags: shubhamjr/multi-server ./server
+          # context: ./worker
+          # push: true
+          # tags: shubhamjr/multi-worker ./worker
 
       # - name: Generate deployment package
       #   run: zip -r deploy.zip . -x '*.git*'
